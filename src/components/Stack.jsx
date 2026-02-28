@@ -9,6 +9,7 @@ import {
   SiMariadb,
   SiSqlite,
   SiMongodb,
+  SiPhp,
   SiNodedotjs
 } from 'react-icons/si';
 import '../styles/Stack.css';
@@ -31,6 +32,8 @@ function Stack() {
               <span className="stack-badge"><SiPython size={24}/> Python</span>
               <span className="stack-badge"><SiR size={24}/> R</span>
               <span className="stack-badge">C#</span>
+              <span className="stack-badge">JavaScript (Node.js)</span>
+              <span className="stack-badge"><SiPhp size={24}/> PHP</span>
             </div>
           </div>
           <div className="stack-category">
@@ -69,8 +72,18 @@ function Stack() {
           <div className="stack-category">
             <h3>Web</h3>
             <div className="stack-badges">
-              <span className="stack-badge">Symfony</span>
               <span className="stack-badge"><SiNodedotjs size={24}/> Node.js</span>
+              <span className="stack-badge">Symfony</span>
+              <span className="stack-badge"><SiPhp size={24}/> PHP</span>
+            </div>
+          </div>
+          <div className="stack-category">
+            <h3>Outils & DevOps</h3>
+            <div className="stack-badges">
+              <span className="stack-badge">Docker</span>
+              <span className="stack-badge">Airflow</span>
+              <span className="stack-badge">CI/CD</span>
+              <span className="stack-badge">Monitoring</span>
             </div>
           </div>
         </div>
