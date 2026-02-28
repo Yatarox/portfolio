@@ -10,7 +10,6 @@ import {
   SiSqlite,
   SiMongodb,
   SiPhp,
-  SiNodedotjs
 } from 'react-icons/si';
 import '../styles/Stack.css';
 
