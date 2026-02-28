@@ -72,7 +72,6 @@ function Stack() {
           <div className="stack-category">
             <h3>Web</h3>
             <div className="stack-badges">
-              <span className="stack-badge"><SiNodedotjs size={24}/> Node.js</span>
               <span className="stack-badge">Symfony</span>
               <span className="stack-badge"><SiPhp size={24}/> PHP</span>
             </div>
