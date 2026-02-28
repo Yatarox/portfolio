@@ -14,7 +14,7 @@ function About() {
       <div className="container about-inner">
         <div className="about-grid">
           <div className="about-photo">
-            <img src="/images/change_me.jpg" alt="Léo Li" />
+            <img src="/images/pp.jpg" alt="Léo Li" style={{ width: '300px', height: '300px' }} />
           </div>
           <div className="about-main">
             <h2 className="about-title">Qui suis-je ?</h2>
@@ -49,6 +49,15 @@ function About() {
                   <li>Découvrir de nouvelles technologies</li>
                 </ul>
               </div>
+            </div>
+            <div className="about-approach">
+              <h3>Mon approche</h3>
+              <ul>
+                <li><strong>Performance :</strong> Priorité à l’optimisation et à l’efficacité des solutions.</li>
+                <li><strong>Cohésion d’équipe :</strong> Collaboration et communication pour avancer ensemble.</li>
+                <li><strong>Fiabilité :</strong> Des projets robustes et maintenables.</li>
+                <li><strong>Innovation :</strong> Ouvert aux nouvelles idées et technologies.</li>
+              </ul>
             </div>
           </div>
         </div>

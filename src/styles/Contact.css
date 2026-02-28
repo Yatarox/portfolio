@@ -1,6 +1,6 @@
 .contact {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #181d2b 0%, #232a3d 100%);
+  background: linear-gradient(135deg, #10131a 60%, #2a1831 100%);
   color: #eaf1ff;
   text-align: center;
 }
@@ -61,7 +61,6 @@
   border-left: 4px solid #e74c3c;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .contact-links {
     flex-direction: column;

@@ -1,50 +1,100 @@
 .skills {
   padding: 4rem 2rem;
-  background: white;
+  background: linear-gradient(135deg, #10131a 60%, #2a1831 100%);
+  color: #eaf1ff;
 }
 
-.skills .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.skills h2 {
+.skills-title {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #333;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(90deg, #7c9cff 40%, #43e97b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-desc {
+  text-align: center;
+  color: #b3c7f7;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
 }
 
-.skill-category {
-  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-  padding: 2rem;
-  border-radius: 10px;
-  border-left: 4px solid #667eea;
+.skill-card {
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 18px #7c9cff33;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 260px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #232a3d;
+  background-blend-mode: multiply;
 }
 
-.skill-category h3 {
-  color: #667eea;
+.skill-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #7c9cff33;
+  border-color: #7c9cff;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
-.skill-category ul {
-  list-style: none;
+.skill-icon {
+  font-size: 2.2rem;
 }
 
-.skill-category li {
-  padding: 0.5rem 0;
-  color: #333;
-}
-
-.skill-category li:before {
-  content: "✓ ";
-  color: #667eea;
+.skill-percent {
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-right: 0.5rem;
+  background: rgba(0,0,0,0.18);
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+}
+
+.skill-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #fff 40%, #eaf1ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.skill-skill {
+  background: rgba(0,0,0,0.18);
+  color: #fff;
+  padding: 0.25rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.skill-skill:hover {
+  background: #7c9cff;
+  color: #fff;
 }

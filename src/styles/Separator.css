@@ -1,0 +1,9 @@
+.separator {
+  width: 100%;
+  height: 2px;
+  margin: 3rem 0;
+  background: linear-gradient(90deg, #7c9cff 0%, #e84a5f 100%);
+  border-radius: 1px;
+  opacity: 0.45; /* augmente l'opacité pour plus de couleur */
+  border: none;
+}

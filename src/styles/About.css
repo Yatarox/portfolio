@@ -1,6 +1,6 @@
 .about {
   padding: 5rem 2rem 4rem 2rem;
-  background: #10131a;
+  background: linear-gradient(135deg, #10131a 60%, #2a1831 100%);
   color: #eaf1ff;
   opacity: 0;
   transform: translateY(40px);
@@ -24,7 +24,7 @@
 
 .about-grid {
   display: flex;
-  align-items: center; /* centre verticalement */
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@
   flex: 0 0 260px;
   display: flex;
   justify-content: center;
-  align-items: center; /* centre sur la hauteur */
+  align-items: center; 
   margin-top: 0;
 }
 
@@ -62,17 +62,30 @@
 
 .about-title {
   font-size: 2.3rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 3.5rem;
   letter-spacing: 1px;
 }
 
-.about-intro {
-  font-size: 1.15rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-  color: #b3c7f7;
-  text-align: left;
+.about-title,
+.about-card h3,
+.about-approach h3 {
+  background: linear-gradient(90deg, #7c9cff 40%, #e84a5f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+.about-intro {
+  margin-bottom: 2.5rem;
+}
+
+.about-intro a {
+  color: #e84a5f;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
 
 .about-intro a {
   color: #7c9cff;
@@ -81,9 +94,8 @@
   transition: color 0.2s;
 }
 .about-intro a:hover {
-  color: #667eea;
+  color: #ff6f91;
 }
-
 .about-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -92,7 +104,7 @@
 }
 
 .about-card {
-  background: #181d2b;
+  background: linear-gradient(120deg, #181d2b 70%, #3a1a2a 100%);
   border-radius: 18px;
   padding: 1.2rem 1.3rem;
   box-shadow: 0 2px 10px #0002;
@@ -122,8 +134,31 @@
   margin-bottom: 0.4rem;
   color: #eaf1ffcc;
 }
+.about-approach {
+  margin-top: 2rem;
+  background: linear-gradient(120deg, #181d2b 70%, #4a1a2a 100%);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 2px 10px #0002;
+}
 
-/* Responsive */
+.about-approach h3 {
+  color: #7c9cff;
+  margin-bottom: 0.7rem;
+}
+
+.about-approach ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-approach li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #eaf1ffcc;
+}
+
 @media (max-width: 900px) {
   .about-grid {
     flex-direction: column;
